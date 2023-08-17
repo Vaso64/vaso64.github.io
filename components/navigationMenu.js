@@ -12,15 +12,15 @@ class NavigationMenu extends HTMLElement {
         const selectedButton = this.getAttribute('selected');
         this.classList.add("navigationMenu");
         var menu = `
-        <a class="navigation-button ${selectedButton === 'projects'   ? ' navigation-button-selected' : ''}" href="./projects.html">Projects</a>
-        <a class="navigation-button ${selectedButton === 'skills'     ? ' navigation-button-selected' : ''}" href="./skills.html">Skills</a>
-        <a class="navigation-button ${selectedButton === 'experience' ? ' navigation-button-selected' : ''}" href="./experience.html">Experience</a>
-        <a class="navigation-button ${selectedButton === 'contact'    ? ' navigation-button-selected' : ''}" href="./contact.html">Contact</a>
+        <a class="navigation-button ${selectedButton === 'projects'   ? ' navigation-button-selected' : ''}" href="./projects">Projects</a>
+        <a class="navigation-button ${selectedButton === 'skills'     ? ' navigation-button-selected' : ''}" href="./skills">Skills</a>
+        <a class="navigation-button ${selectedButton === 'experience' ? ' navigation-button-selected' : ''}" href="./experience">Experience</a>
+        <a class="navigation-button ${selectedButton === 'contact'    ? ' navigation-button-selected' : ''}" href="./contact">Contact</a>
         `;
 
         this.innerHTML = `
             <div class="navigation-header">
-                <a class="header-logo navigation-button ${selectedButton === 'index' ? ' navigation-button-selected' : ''}" href="./index.html">MV</a>
+                <a class="header-logo navigation-button ${selectedButton === 'index' ? ' navigation-button-selected' : ''}" href="/">MV</a>
                 <img class="dropdown-button" src="./media/icons/hamburger.png" alt="Hamburger menu" onclick="document.querySelector('navigation-menu').toggleDropdown()"/>
                 <div class="header-menu">${menu}</div>
             </div>
