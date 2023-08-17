@@ -1,0 +1,33 @@
+.contact-button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    width: 500px;
+    height: 80px;
+    padding: 15px;
+    gap: 30px;
+}
+
+.contact-button:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.contact-button-icon{
+    height: 100%;
+}
+
+.contact-button-text{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-button-platform{
+    font-size: 24pt;
+}
+
+.contact-button-username{
+    font-size: 14pt;
+}

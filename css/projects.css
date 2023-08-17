@@ -1,0 +1,5 @@
+@media only screen and (max-width: 1470px) {
+    .content{
+        gap: calc(50px + 2vw);
+    }
+}

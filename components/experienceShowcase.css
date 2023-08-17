@@ -1,0 +1,76 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(600px + 20vw);
+    width: 100%;
+    gap: calc(10px + 0.4vw);
+}
+
+.experience-header {
+    display: grid;
+    align-items: flex-end;
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+    font-size: calc(18px + 0.35vw);
+}
+
+@media screen and (min-width: 721px) {
+    .experience-header {
+        grid-template-areas: "logo title date";
+    }
+
+    .experience-title {
+        text-align: center;
+    }
+
+    .experience-date {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 481px) {
+    .experience-header {
+        grid-template-areas: "logo  blank"
+                             "title date";
+    }
+
+    .experience-date {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience-header {
+        grid-template-areas: "logo"
+                             "title"
+                             "date";
+    }
+
+    .redundant-title {
+        display: none;
+        margin-top: -20px;
+    }
+}
+
+
+.experience-logo {
+    grid-area: logo;
+    max-height: calc((160px + 2vw) / 2);
+    max-width: calc(160px + 2vw);
+}
+
+.experience-title {
+    grid-area: title;
+    font-size: inherit;
+}
+
+.experience-date {
+    grid-area: date;
+    font-size: inherit;
+}
+
+.experience-line{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}

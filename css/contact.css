@@ -1,0 +1,31 @@
+body {
+    height: 100%;
+}
+
+.content {
+    flex: auto;
+    justify-content: center;
+}
+
+.contact-list{
+    max-width: calc(500px + 40vw);
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: calc(25px + 1vw);
+}
+
+icon-button{
+    max-width: calc(300px + 5vw);
+    width: 100%;
+}
+
+.space-top{
+    flex-grow: 38;
+}
+
+.space-bottom{
+    flex-grow: 55;
+}
+
