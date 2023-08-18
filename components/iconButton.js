@@ -26,9 +26,15 @@ class IconButton extends HTMLElement {
                 window.location.href = this.getAttribute('link');
         }     
 
+        var icon;
+        if (this.getAttribute('icon').endsWith('.svg'))
+            icon = `<svg class="icon-button-icon" style="fill: ${color};" data-src="${this.getAttribute('icon')}" data-cache="disabled"></svg>`;
+        else
+            icon = `<img class="icon-button-icon" src="${this.getAttribute('icon')}" alt="${this.getAttribute('name')} Icon">`;
+
         this.innerHTML = `
-        <img class="icon-button-icon" src="${this.getAttribute('icon')}" alt="${this.getAttribute('name')} Icon">
-        <div class="icon-button-text" style="color: ${color};">
+        ${icon}
+        <div class="icon-button-text"">
             <p class="icon-button-name">${this.getAttribute('name')}</p>
             <p class="icon-button-subname">${this.getAttribute('subname')}</p> 
         </div>

@@ -13,6 +13,11 @@
 
 .dropdown-button {
     width: 50px;
+    fill: black;
+}
+
+.dropdown-button:hover {
+    cursor: pointer;
 }
 
 .dropdown-menu {

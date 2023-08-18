@@ -21,7 +21,7 @@ class NavigationMenu extends HTMLElement {
         this.innerHTML = `
             <div class="navigation-header">
                 <a class="header-logo navigation-button ${selectedButton === 'index' ? ' navigation-button-selected' : ''}" href="/">MV</a>
-                <img class="dropdown-button" src="./media/icons/hamburger.png" alt="Hamburger menu" onclick="document.querySelector('navigation-menu').toggleDropdown()"/>
+                <svg class="dropdown-button" data-src="./media/icons/hamburger.svg" data-cache="disabled" onclick="document.querySelector('navigation-menu').toggleDropdown()"/>
                 <div class="header-menu">${menu}</div>
             </div>
             <div class="dropdown-menu">${menu}</div>

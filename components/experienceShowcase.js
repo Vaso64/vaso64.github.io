@@ -5,13 +5,22 @@ class ExperienceShowcase extends HTMLElement {
 
     connectedCallback() {
         this.classList.add("experience");
+
+        var logo;
+        if (this.getAttribute('logo').endsWith('.svg'))
+            logo = `<svg class="experience-logo" data-src="${this.getAttribute('logo')}" data-cache="disabled"></svg>`;
+        else
+            logo = `<img class="experience-logo" src="${this.getAttribute('logo')}" alt="${this.getAttribute('title')} logo">`;
+
         this.innerHTML = `
             <div class="experience-header">
-                <img class="experience-logo" src="${this.getAttribute('logo')}" alt="${this.getAttribute('title')}">
+                ${logo}
                 <h3 class="experience-title">${this.getAttribute('title')}</h3>
                 <h3 class="experience-date">${this.getAttribute('date')}</h3>
             </div>
-            <div class="experience-line"></div>
+            <svg class="experience-line" viewBox="0 0 1 1" preserveAspectRatio="none">
+                <rect width="1" height="1"/>
+            </svg>
             <p class="experience-description">${this.getAttribute('description')}</p>
         `;
 

@@ -40,7 +40,7 @@
     grid-area: divider;
     width: 3px;
     height: 550px;
-    background-color: black;
+    fill: black;
 }
 
 .project-media{
@@ -62,7 +62,7 @@
     width: 100%;
     aspect-ratio: 16/9;
     outline: 3px solid black;
-    outline-offset: -3px;
+    outline-offset: -2px;
 }
 
 .project-media-showcase{

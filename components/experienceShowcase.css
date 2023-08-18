@@ -17,6 +17,7 @@
 @media screen and (min-width: 721px) {
     .experience-header {
         grid-template-areas: "logo title date";
+        grid-template-columns: auto 1fr auto;
     }
 
     .experience-title {
@@ -57,11 +58,13 @@
     grid-area: logo;
     max-height: calc((160px + 2vw) / 2);
     max-width: calc(160px + 2vw);
+    object-fit: contain;
 }
 
 .experience-title {
     grid-area: title;
     font-size: inherit;
+    justify-self: stretch;
 }
 
 .experience-date {
@@ -72,5 +75,5 @@
 .experience-line{
     width: 100%;
     height: 3px;
-    background-color: black;
+    fill: black;
 }

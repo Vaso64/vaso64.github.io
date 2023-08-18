@@ -27,7 +27,9 @@ class ProjectShowcase extends HTMLElement {
             <h2 class="project-header-name">${this.getAttribute('name')}</h2>
             <h4 class="project-header-subname">${this.getAttribute('summary')}</h3>
         </div>
-        <div class="project-divider"></div>
+        <svg class="project-divider" viewBox="0 0 1 1" preserveAspectRatio="none">
+            <rect width="1" height="1"/>
+        </svg>
         <div class="project-media">
             <div class="project-media-showcase-container"></div>
             <div class="project-media-list"></div>
