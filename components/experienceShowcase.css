@@ -77,3 +77,15 @@
     height: 3px;
     fill: black;
 }
+
+.experience-links{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: calc(12px + 0.6vw);
+    row-gap: calc(8px + 0.4vw);
+
+}
+
+.experience-links-item{
+    width: calc(200px + 2vw);
+}

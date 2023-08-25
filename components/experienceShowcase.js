@@ -12,6 +12,13 @@ class ExperienceShowcase extends HTMLElement {
         else
             logo = `<img class="experience-logo" src="${this.getAttribute('logo')}" alt="${this.getAttribute('title')} logo">`;
 
+        // Generate links  
+        var linksJSON = this.getAttribute('links');
+        var links = linksJSON ? Object.entries(JSON.parse(linksJSON)).map(([key, value]) => value) : [];
+        var linksHTML = '';
+        for (const link of links)
+            linksHTML += `<icon-button class="experience-links-item" name="${link.name}" link="${link.url}" icon="${link.icon}"></icon-button>`;
+
         this.innerHTML = `
             <div class="experience-header">
                 ${logo}
@@ -22,6 +29,9 @@ class ExperienceShowcase extends HTMLElement {
                 <rect width="1" height="1"/>
             </svg>
             <p class="experience-description">${this.getAttribute('description')}</p>
+            <div class="experience-links">
+                ${linksHTML}
+            </div>
         `;
 
         // Link stylesheet
