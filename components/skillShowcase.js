@@ -15,7 +15,7 @@ class SkillShowcase extends HTMLElement {
         this.innerHTML = `
         ${icon}
         <h3 class="skill-name">${this.getAttribute('name')}</h3>
-        <div class="skill-line"></div>
+        <svg class="skill-line" viewBox="0 0 1 1" preserveAspectRatio="none"><rect width="1" height="1"/></svg>
         <p class="skill-description">${this.getAttribute('description')}</p> 
         `;
 
