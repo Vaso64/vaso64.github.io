@@ -33,6 +33,10 @@ jobs:
       - name: Publish (Release)
         run: dotnet publish Portfolio.csproj -c Release -o build_output --nologo
 
+      # Use Blazor for deep link navigation
+      - name: Copy index.html to 404.html
+        run: cp build_output/wwwroot/index.html build_output/wwwroot/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
