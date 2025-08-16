@@ -1,0 +1,69 @@
+﻿:root {
+    --white: #ffffff;
+    --white-hover: #f0f0f0;
+    --black: #000000;
+    --dark: #333333;
+    --dark-hover: #555555;
+
+    --line: 3px;
+
+    --fontScale: calc(0.005 * var(--mvw));
+
+    /* Define max viewport width */
+    --mvw: calc(0.01 * var(--currentWidth));
+    --currentWidth: min(100vw, 800px + 40vw, 1500px)
+}
+
+.round-box{
+    display: flex;
+    align-items: stretch;
+    justify-content: start;
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.square-box{
+
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    height: 38px;
+    padding: 0.2rem 0.9rem;
+    gap: 16px;
+}
+
+
+
+.clickable-light{
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.clickable-light:hover{
+    background-color: var(--white-hover);
+}
+
+.clickable-dark{
+    cursor: pointer;
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.clickable-dark:hover{
+    background-color: var(--dark-hover);
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+.inverted {
+    filter: invert(100%);
+}

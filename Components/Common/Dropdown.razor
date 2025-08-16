@@ -1,0 +1,65 @@
+﻿@typeparam TItem
+@inject IJSRuntime JsRuntime
+
+<div class="root @Class" tabindex="0" @onfocusout="() => _isOpen = false" >
+    <div class="bar round-box clickable-light" @onclick="() => _isOpen = !_isOpen">
+        @if (!string.IsNullOrWhiteSpace(Icon))
+        {
+            <img class="icon" src="@Icon"/>
+        }
+        <span class="dropdown-value">@DisplayText(SelectedItem)</span>
+        <img class="icon dropdown-icon" src="./media/icons/down.svg" alt="Dropdown"/>
+    </div>
+    <div class="dropdown-list round-box @(_isOpen ? "" : "hidden")" @ref="_dropdownList">
+        @foreach (var item in Items)
+        {
+            <span class="dropdown-list-item clickable-light" @onclick="() => SelectItem(item)">
+                @DisplayText(item)
+            </span>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Icon { get; set; }
+
+    [Parameter]
+    public required List<TItem> Items { get; set; } = [];
+
+    [Parameter]
+    public EventCallback<TItem> OnItemSelected { get; set; }
+
+    [Parameter]
+    public TItem DefaultItem { get; set; }
+
+    [Parameter]
+    public Func<TItem, string> DisplayText { get; set; } = item => item != null ? item.ToString() : string.Empty;
+
+
+    public TItem SelectedItem { get; private set; }
+
+    private bool _isOpen = false;
+
+    private ElementReference _dropdownList;
+
+    protected override void OnInitialized()
+    {
+        SelectedItem = DefaultItem ?? Items.FirstOrDefault();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JsRuntime.InvokeVoidAsync("preventDefault", _dropdownList, "mousedown");
+    }
+
+    private void SelectItem(TItem item)
+    {
+        SelectedItem = item;
+        _isOpen = false;
+        OnItemSelected.InvokeAsync(item);
+    }
+}

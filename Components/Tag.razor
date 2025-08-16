@@ -1,0 +1,36 @@
+﻿@using Portfolio.Components.Common
+@inject NavigationManager Navigation
+
+<div class="root @Class @(IsClickable ? "clickable-dark" : "")" @onclick="OnClick">
+    <p class="text">@Text</p>
+    @if (!string.IsNullOrWhiteSpace(ButtonIcon))
+    {
+        <MiniButton class="button" OnButtonClick=@OnButtonClick Icon=@ButtonIcon InvertColor=@true/>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    [Parameter]
+    public required string Text { get; set; }
+
+    [Parameter]
+    public string Url { get; set; } = string.Empty;
+    public bool IsUrlExternal => Url.StartsWith("http://") || Url.StartsWith("https://");
+    public bool IsClickable => !string.IsNullOrWhiteSpace(Url);
+
+    [Parameter]
+    public string ButtonIcon { get; set; } = string.Empty;
+    [Parameter]
+    public EventCallback OnButtonClick { get; set; }
+
+
+    private void OnClick()
+    {
+        if (!IsClickable)
+            return;
+        Navigation.NavigateTo(Url, forceLoad: IsUrlExternal);
+    }
+}

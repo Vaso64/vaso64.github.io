@@ -1,0 +1,48 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<div class="navigationMenu">
+    <div class="navigation-header">
+        <a class="header-logo navigation-button @(Selected == "" ? "navigation-button-selected" : "")" href="/">MV</a>
+        <img class="dropdown-button" src="./media/icons/hamburger.svg" @onclick="ToggleDropdown" />
+        <div class="header-menu">
+            @MenuLinks
+        </div>
+    </div>
+    <div class="dropdown-menu" style="@DropdownDisplayStyle">
+        @MenuLinks
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Selected { get; set; }
+
+    private bool _isDropdownVisible = false;
+    private string DropdownDisplayStyle => _isDropdownVisible ? "display: flex;" : "display: none;";
+
+    private RenderFragment MenuLinks => __builder =>
+    {
+        <a class="navigation-button @(Selected == "projects"   ? " navigation-button-selected" : "")" href="./projects">Projects</a>
+        <a class="navigation-button @(Selected == "skills"     ? " navigation-button-selected" : "")" href="./skills">Skills</a>
+        <a class="navigation-button @(Selected == "experience" ? " navigation-button-selected" : "")" href="./experience">Experience</a>
+        <a class="navigation-button @(Selected == "contact"    ? " navigation-button-selected" : "")" href="./contact">Contact</a>
+    };
+
+    private void ToggleDropdown()
+    {
+        _isDropdownVisible = !_isDropdownVisible;
+    }
+
+    protected override void OnInitialized()
+    {
+        NavigationManager.LocationChanged += (_, _) => SetSelectedFromCurrentUrl();
+        SetSelectedFromCurrentUrl();
+    }
+
+    private void SetSelectedFromCurrentUrl()
+    {
+        Selected = NavigationManager.ToAbsoluteUri(NavigationManager.Uri).AbsolutePath.Trim('/').ToLowerInvariant();
+        StateHasChanged();
+    }
+}

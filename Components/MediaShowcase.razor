@@ -1,0 +1,50 @@
+﻿@using Portfolio.Model
+
+@if (Media != null)
+{
+    <div class="root @Class">
+        <div class="media-container">
+            @if (_currentMedia.Type == "video")
+            {
+                <video class="media media-video" src="@_currentMedia.Src" loop muted playsinline autoplay></video>
+            }
+            else
+            {
+                <img class="media media-image" src="@_currentMedia.Src" alt="Project Image">
+            }
+        </div>
+        @if (Media.Count > 1)
+        {
+            <div class="media-list">
+                @foreach (var mediaItem in Media)
+                {
+                    <div class="media-list-item @(_currentMedia == mediaItem ? "media-list-item-selected" : "")" @onclick="() => SetMediaShowcase(mediaItem)">
+                        <img class="media-list-item-thumbnail" src="@mediaItem.Thumbnail" alt="Project Thumbnail">
+                        @if (mediaItem.Type == "video") {
+                            <img src="./media/icons/play.png" alt="Play Icon" class="media-list-item-playicon">
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+}
+
+@code {
+    [Parameter] public string Class { get; set; } = string.Empty;
+
+    [Parameter] public List<Media> Media { get; set; } = [];
+
+    private Media _currentMedia;
+
+    protected override void OnParametersSet()
+    {
+        if (Media != null && Media.Any())
+            _currentMedia = Media.First();
+    }
+
+    private void SetMediaShowcase(Media media)
+    {
+        _currentMedia = media;
+    }
+}

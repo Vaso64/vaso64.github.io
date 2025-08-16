@@ -1,0 +1,28 @@
+﻿.content {
+    flex: auto;
+}
+
+.contact-list
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:
+        calc(24px + 0.75 * var(--mvw))
+        calc(32px + 1 * var(--mvw));
+    justify-items: center;
+    justify-content: center;
+}
+
+::deep .contact-list-item
+{
+    width: calc(260px + 6 * var(--mvw));
+}
+
+.space-top{
+    flex-grow: 40;
+}
+
+.space-bottom{
+    flex-grow: 60;
+}

@@ -1,0 +1,75 @@
+﻿@using Portfolio.Components.Common
+@inject IJSRuntime JsRuntime
+
+<div class="root @Class" @onfocusout="() => _showResults = false">
+    <div class="bar round-box">
+        <input
+            class="text-input"
+            value="@Text"
+            @oninput="OnInput"
+            @onfocus="() => _showResults = true"
+        />
+        <MiniButton class="search-button" Icon="./media/icons/search.svg"/>
+    </div>
+
+    <div class="result-list round-box @(_showResults && MatchingSuggestions.Any() ? "" : "hidden")" @ref="_resultList">
+        @foreach (var match in MatchingSuggestions)
+        {
+            <span class="result-list-item clickable-light" @onclick="() => SelectSuggestion(match)">
+                @match
+            </span>
+        }
+    </div>
+</div>
+
+
+@code {
+    [Parameter] public string Class { get; set; } = string.Empty;
+
+    [Parameter] public required List<string> Suggestions { get; set; }
+
+    [Parameter] public EventCallback OnTextChanged { get; set; }
+
+    public string Text { get; set; } = string.Empty;
+
+
+    private ElementReference _resultList;
+
+    private IEnumerable<string> MatchingSuggestions
+    {
+        get
+        {
+            var queryText = Text.Split(EntrySeparator).Last();
+            return Suggestions
+                .Where(s => s.Contains(queryText, StringComparison.OrdinalIgnoreCase));
+        }
+    }
+
+    private bool _showResults = false;
+
+    private const string EntrySeparator = "  ";
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JsRuntime.InvokeVoidAsync("preventDefault", _resultList, "mousedown");
+    }
+
+    private void SelectSuggestion(string suggestion)
+    {
+        var split = Text.Split(EntrySeparator);
+
+        Text = split.Length > 1
+            ? split.SkipLast(1).Aggregate((a, b) => a + EntrySeparator + b) + EntrySeparator + suggestion
+            : suggestion;
+        Text += EntrySeparator;
+        OnTextChanged.InvokeAsync();
+    }
+
+    private void OnInput(ChangeEventArgs e)
+    {
+        Text = e.Value?.ToString() ?? string.Empty;
+        OnTextChanged.InvokeAsync();
+        _showResults = true;
+    }
+}

@@ -1,0 +1,3 @@
+﻿.button{
+    width: calc(400px + 15 * var(--mvw));
+}

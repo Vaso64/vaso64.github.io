@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    font-weight: normal ;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Raleway", "Arial", "Times New Roman", serif;
+    font-feature-settings: 'lnum' 1; /* Fixes Raleway font numerals */
+
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    padding: calc(64px) max(calc(50vw - min(400px + 10vw, 700px)), 32px);
+}*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(48px + 4 * var(--mvw));
+    width: 100%;
+    max-width: var(--currentWidth);
+    margin: 0 auto;
+    padding: 64px 32px; /* Vertical and horizontal padding */
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+h1{
+    font-size: calc(34px + 34 * var(--fontScale));
+}
+
+h2{
+    font-size: calc(26px + 26 * var(--fontScale));
+}
+
+h3{
+    font-size: calc(19px + 19 * var(--fontScale));
+}
+
+p{
+    line-height: 1.6;
+    font-size: calc(16px + 16 * var(--fontScale));
+    white-space: pre-wrap;
+}
+
+input{
+    font-family: inherit;
+    font-size: calc(17px + 17 * var(--fontScale));
+}

@@ -1,0 +1,74 @@
+﻿.root-container{
+    container: project / inline-size;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.root {
+    display: grid;
+    row-gap: 10px;
+    margin: 48px 0;
+}
+
+.divider {
+    grid-area: divider;
+    width: 3px;
+    height: calc(100% + 97px);
+    top: -48px;
+    fill: black;
+}
+
+.header {
+    grid-area: header;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.header-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+::deep .project-media {
+    grid-area: media;
+    align-self: center;
+}
+
+.info {
+    grid-area: info;
+}
+
+.info-links {
+    margin-top: 20px;
+    display: flex;
+    column-gap: calc(20px + 1*var(--mvw));
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+
+@container (width < 1000px) {
+    .root {
+        max-width: 750px;
+        grid-template-areas: "header"
+                             "media"
+                             "info";
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+@container (width >= 1000px) {
+    .root {
+        grid-template-areas: "media divider header"
+                             "media divider info";
+        grid-template-columns: 4fr 3px 5fr;
+        column-gap: 5%;
+    }
+}

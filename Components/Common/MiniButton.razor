@@ -1,0 +1,26 @@
+﻿<div class="mini-button @(InvertColor ? "inverted" : "") @Class" @onclick="OnClick">
+    <img class="mini-button-icon" src="@Icon" alt="@Alt" />
+</div>
+
+@code {
+
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    [Parameter]
+    public required string Icon { get; set; }
+
+    [Parameter]
+    public EventCallback OnButtonClick { get; set; }
+
+    [Parameter]
+    public string Alt { get; set; } = string.Empty;
+
+    [Parameter]
+    public bool InvertColor { get; set; }
+
+    private void OnClick()
+    {
+        OnButtonClick.InvokeAsync();
+    }
+}
