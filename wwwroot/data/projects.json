@@ -342,6 +342,49 @@
     },
 
     {
+        "name": "Path Tracer",
+        "year": 2025,
+        "description": "Renderer capable of producing path-traced lighting in real-time, written in C++ and OpenGL API (GLSL). The renderer offers various ray-sampling techniques with varying complexity (uniform, cosine, mixed) and BRDF models (Lambert, GGX (without translucency), mixed).",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://www.github.com/Vaso64/PathTracer",
+                "icon": "./media/icons/github.svg"
+            }
+        ],
+        "skillIds": [
+            "c"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/1.jpg",
+                "thumbnail": "./media/projects/pathtracer/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/2.jpg",
+                "thumbnail": "./media/projects/pathtracer/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/3.jpg",
+                "thumbnail": "./media/projects/pathtracer/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/4.jpg",
+                "thumbnail": "./media/projects/pathtracer/4_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/5.jpg",
+                "thumbnail": "./media/projects/pathtracer/5_thumb.jpg"
+            }
+        ]
+    },
+
+    {
         "name": "3D Game Engine",
         "year": 2024,
         "description": "My own custom game engine, built with C++ and OpenGL. It features fully functional physics (including collision resolving, gravity, depenetration, friction, restitution, etc.), rendering (including lightning, material system, mesh management / generation, custom shader support), mathematical utilities (Vector, Quaternion, Matrix, Plane, etc.) and fully scriptable system with component-based architecture and API similar to Unity. A simple 3D pong game was made with it as a proof of concept, showcasing the engine's capabilities.",

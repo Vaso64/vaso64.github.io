@@ -1,11 +1,7 @@
-  game engine [media]
-  overdash [all]
-  model human 
-  model robot 
-  game engine [media]
-  hectic galactic [video]
-  to the stars 
-  python calculator [all?]
-  rss reader [all]
-  packet intercepter [all]
-  ride share 
+hectic galactic (video)
+
+overdash (project)
+python calc (project)
+
+home page easter egg
+fix GitHub links
