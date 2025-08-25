@@ -58,11 +58,6 @@
         "description": "University school project, made in collaboration with two other students, is an alternative sci-fi take on the popular bomb defusal game \"Keep Talking and Nobody Explodes\". Two players take the role of an \"operator\" who is in charge of flying a spaceship and a \"support\" role with access to the spaceship's manual. Players must cooperate during the flight in order to tackle various semi-randomized challenges and obstacles with increasing complexity.",
         "links": [
             {
-                "name": "GitHub",
-                "url": "https://www.github.com/Vaso64/HecticGalactic",
-                "icon": "./media/icons/github.svg"
-            },
-            {
                 "name": "Itch.io",
                 "url": "https://vaso64.itch.io/hectic-galactic",
                 "icon": "./media/icons/itchio.svg"
@@ -157,12 +152,12 @@
         "links": [
             {
                 "name": "GitHub",
-                "url": "https://www.github.com/Vaso64/Portfolio",
+                "url": "https://github.com/Vaso64/vaso64.github.io",
                 "icon": "./media/icons/github.svg"
             },
             {
                 "name": "Web",
-                "url": "https://vaso64.dev/#recursion",
+                "url": "https://vaso64.dev",
                 "icon": "./media/icons/web.svg"
             }
         ],
@@ -345,13 +340,7 @@
         "name": "Path Tracer",
         "year": 2025,
         "description": "Renderer capable of producing path-traced lighting in real-time, written in C++ and OpenGL API (GLSL). The renderer offers various ray-sampling techniques with varying complexity (uniform, cosine, mixed) and BRDF models (Lambert, GGX (without translucency), mixed).",
-        "links": [
-            {
-                "name": "GitHub",
-                "url": "https://www.github.com/Vaso64/PathTracer",
-                "icon": "./media/icons/github.svg"
-            }
-        ],
+        "links": [],
         "skillIds": [
             "c"
         ],
@@ -388,13 +377,7 @@
         "name": "3D Game Engine",
         "year": 2024,
         "description": "My own custom game engine, built with C++ and OpenGL. It features fully functional physics (including collision resolving, gravity, depenetration, friction, restitution, etc.), rendering (including lightning, material system, mesh management / generation, custom shader support), mathematical utilities (Vector, Quaternion, Matrix, Plane, etc.) and fully scriptable system with component-based architecture and API similar to Unity. A simple 3D pong game was made with it as a proof of concept, showcasing the engine's capabilities.",
-        "links": [
-            {
-                "name": "GitHub",
-                "url": "https://www.github.com/Vaso64/3DGameEngine",
-                "icon": "./media/icons/github.svg"
-            }
-        ],
+        "links": [],
         "skillIds": [
             "c",
             "git"
@@ -501,13 +484,7 @@
         "subName": ".NET Desktop application for carpooling",
         "year": 2020,
         "description": "A simple desktop application for carpooling, made as a university project with three other students. The app was built on the .NET platform with a minimal stack, utilizing only the WPF and Entity Framework. The main goal for developing the app was to teach ourselves the practices of software engineering and collaboration, with strong emphasis on the design patterns, code architecture quality, high modularity, and feature scalability.",
-        "links": [
-            {
-                "name": "GitHub",
-                "url": "https://www.github.com/Vaso64/RideShare",
-                "icon": "./media/icons/github.svg"
-            }
-        ],
+        "links": [],
         "skillIds": [
             "dotnet",
             "c_sharp",
@@ -542,18 +519,7 @@
         "subName": "Competitive couch co-op tower builder / platformer",
         "year": 2023,
         "description": "Entry for 24-hour game jam. Players compete against each other in building, scaling up, and climbing their towers as fast as possible, while trying to sabotage their opponents' progress. The game features colorful hand-made visuals, simple crafting and farming mechanics, and arcade physics-based movement. Playable up to 8 players in 2 teams.",
-        "links": [
-            {
-                "name": "Itch.io",
-                "url": "https://vaso64.itch.io/tothe-sky",
-                "icon": "./media/icons/itchio.svg"
-            },
-            {
-                "name": "GitHub",
-                "url": "https://www.github.com/Vaso64/ToTheStars",
-                "icon": "./media/icons/github.svg"
-            }
-        ],
+        "links": [],
         "skillIds": [
             "unity",
             "c_sharp",
