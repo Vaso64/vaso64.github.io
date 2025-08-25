@@ -1,0 +1,47 @@
+﻿.root-container{
+    container: icon-button / size;
+    aspect-ratio: 4 / 1;
+    width: calc(160px + 4*var(--mvw));
+    min-height: 35px;
+}
+
+.root {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15cqh;
+    gap: 20cqh;
+    border: 3px solid black;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.root:hover {
+    background-color: #f0f0f0;
+}
+
+.icon {
+    height: 100%;
+    aspect-ratio: 1;
+    filter: brightness(0);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5cqh;
+}
+
+.name{
+    font-size: calc(0.6rem + 18cqh);
+}
+
+.primary-name {
+    font-weight: bold;
+    font-size: calc(0.5rem + 15cqh);
+}
+
+.sub-name {
+    font-size: calc(0.35rem + 12cqh);
+}

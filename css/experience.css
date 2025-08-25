@@ -1,8 +1,0 @@
-.content{
-    gap: calc(40px + 3vw);
-}
-
-.button{
-    width: 100%;
-    max-width: calc(400px + 10vw);  
-}

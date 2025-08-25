@@ -1,0 +1,39 @@
+﻿.content{
+    align-items: stretch;
+}
+
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    gap: 16px;
+}
+
+::deep .search-skill{
+    height: 48px;
+    flex-grow: 3;
+    flex-basis: 0;
+}
+
+::deep .search-sort{
+    height: 48px;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 250px;
+}
+
+@media (min-width: 1000px) {
+    .search{
+        flex-direction: row;
+    }
+
+    ::deep .search-skill{
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .search{
+        flex-direction: column;
+    }
+}

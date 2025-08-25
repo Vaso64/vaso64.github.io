@@ -1,0 +1,84 @@
+﻿@using Portfolio.Components.Common
+@typeparam TTag
+@inject IJSRuntime JsRuntime
+
+<div class="root @Class" @onfocusout="() => _showResults = false">
+    <div class="bar round-box">
+        @if (SelectedTags.Any())
+        {
+            <div class="selected-list">
+                @foreach (var tag in SelectedTags)
+                {
+                    <Tag
+                        class="selected-list-item"
+                        Text="@DisplayText(tag)"
+                        ButtonIcon="./media/icons/cross.svg"
+                        OnButtonClick="() => RemoveTag(tag)"/>
+                }
+            </div>
+        }
+        <input
+            class="tag-input"
+            @bind="_searchText"
+            @bind:event="oninput"
+            @onfocus="() => _showResults = true"/>
+        <MiniButton class="search-button" Icon="./media/icons/search.svg"/>
+    </div>
+
+    <div class="result-list round-box @(_showResults && FilteredTags.Any() ? "" : "hidden")" @ref="_resultList">
+        @foreach (var tag in FilteredTags)
+        {
+            <span class="result-list-item clickable-light" @onclick="() => AddTag(tag)">
+                @DisplayText(tag)
+            </span>
+        }
+    </div>
+</div>
+
+
+@code {
+    [Parameter] public string Class { get; set; } = string.Empty;
+
+    [Parameter] public required List<TTag> Tags { get; set; }
+
+    [Parameter] public required Func<TTag, string> DisplayText { get; set; }
+
+    [Parameter] public EventCallback OnSelectionChanged { get; set; }
+
+    private string _searchText = string.Empty;
+
+    private readonly List<TTag> _selectedTags = [];
+    public IEnumerable<TTag> SelectedTags => _selectedTags;
+
+    private IEnumerable<TTag> FilteredTags => Tags
+        .Where(t => DisplayText(t).Contains(_searchText, StringComparison.OrdinalIgnoreCase))
+        .Where(t => !_selectedTags.Contains(t));
+
+    private ElementReference _resultList;
+    private bool _showResults = false;
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JsRuntime.InvokeVoidAsync("preventDefault", _resultList, "mousedown");
+    }
+
+    private void AddTag(TTag tag)
+    {
+        if (!_selectedTags.Contains(tag))
+        {
+            _selectedTags.Add(tag);
+            _searchText = string.Empty;
+            OnSelectionChanged.InvokeAsync();
+        }
+    }
+
+    private void RemoveTag(TTag tag)
+    {
+        if (_selectedTags.Contains(tag))
+        {
+            _selectedTags.Remove(tag);
+            OnSelectionChanged.InvokeAsync();
+        }
+    }
+}

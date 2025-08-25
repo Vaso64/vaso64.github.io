@@ -1,0 +1,74 @@
+﻿@page "/projects"
+@using Portfolio.Common
+@using Portfolio.Components
+@using Portfolio.Model
+@using Portfolio.Services
+@using Portfolio.Components.Common
+@inject IDataService DataService
+
+<div class="content">
+    <div class="search">
+        <TagSearch
+            class="search-skill"
+            @ref="_tagSearch"
+            TTag="@Skill"
+            Tags="DataService.Skills.ToList()"
+            DisplayText="s => s.Name"
+            OnSelectionChanged="StateHasChanged"
+        />
+
+        <Dropdown
+            @ref  = "_sortDropdown"
+            class = "search-sort"
+            TItem = "@SortOptions"
+            Icon  = "./media/icons/sort.svg"
+            Items = "_sortOptions"
+            DefaultItem    = "SortOptions.Featured"
+            OnItemSelected = "_ => StateHasChanged()"
+        />
+    </div>
+
+    <div class="projects">
+        @foreach (var project in SelectedProjects)
+        {
+            <ProjectWidget CurrentProject="@project"></ProjectWidget>
+        }
+    </div>
+</div>
+
+@code {
+    private readonly List<SortOptions> _sortOptions =
+    [
+        SortOptions.Featured,
+        SortOptions.Name,
+        SortOptions.Date
+    ];
+
+    private Dropdown<SortOptions> _sortDropdown;
+    private TagSearch<Skill> _tagSearch;
+
+
+    IEnumerable<Project> SelectedProjects
+    {
+        get
+        {
+            // Filter
+            var projects = _tagSearch != null && _tagSearch.SelectedTags.Any()
+                ? DataService.Projects.Where(p => p.Skills.Any(s => _tagSearch.SelectedTags.Contains(s)))
+                : DataService.Projects;
+
+            // Sort
+            projects = _sortDropdown != null
+                ? _sortDropdown.SelectedItem switch
+                {
+                    SortOptions.Name     => projects.OrderBy(p => p.Name),
+                    SortOptions.Date     => projects.OrderByDescending(p => p.Year),
+                    SortOptions.Featured => projects,
+                    _                    => throw new ArgumentOutOfRangeException()
+                }
+                : projects;
+
+            return projects;
+        }
+    }
+}

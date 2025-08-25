@@ -1,0 +1,19 @@
+﻿.root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    padding: 0px 12px;
+    border-radius: 0.5rem;
+    background-color: #333;
+    height: 28px;
+}
+
+.text{
+    font-size: 0.9rem;
+    color: white;
+}
+
+::deep .button {
+    height: 80%;
+}

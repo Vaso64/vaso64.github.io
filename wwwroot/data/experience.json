@@ -1,0 +1,85 @@
+﻿[
+    {
+        "name": "Mynd",
+        "logo": "./media/icons/mynd.png",
+        "date": "2023 – Present",
+        "description": "Established e-learning and animation company, where I solo-developed various interactive Unity-based web apps.\nSome highlights include a complex 3D e-learning solution with engine-like features, or a photorealistic interactive building visualization. I had a majority contribution on these projects, spanning from designing, implementation, and testing all the way to production-scale deployment and maintenance.",
+        "links": [
+            {
+                "name": "mynd.com",
+                "url": "https://www.mynd.com/en/",
+                "icon": "./media/icons/web.svg"
+            }
+        ]
+    },
+    {
+        "name": "Masaryk University\nFaculty of Informatics",
+        "logo": "./media/icons/muni.png",
+        "date": "2023 – 2026",
+        "description": "My ongoing master’s degree study at Masaryk University, the largest university located in the Czech Republic.\nI'm enrolled in \"Visual Informatics\" program with a specialization in game development and advanced 3D graphics.",
+        "links": [
+            {
+                "name": "fi.muni.cz",
+                "url": "https://www.fi.muni.cz/index.html.en",
+                "icon": "./media/icons/web.svg"
+            }
+        ]
+    },
+    {
+        "name": "Iteria",
+        "logo": "./media/icons/iteria.svg",
+        "date": "2021 – 2022",
+        "description": "A successful startup company located in Slovakia. As a Unity developer, my primary role was developing a mobile AR application for architecture assistance and development, which was contracted by AKULAR, a software development company seated in US, Virginia.\nDuring my time I also had the opportunity to work on projects involving more exotic devices such as HoloLens and Magic Leap. In this role, I gained valuable experience developing complex XR solutions, designing core application systems while also assisting and mentoring my colleagues.",
+        "links": [
+            {
+                "name": "iteria.io",
+                "url": "https://www.iteria.io",
+                "icon": "./media/icons/web.svg"
+            },
+            {
+                "name": "akular.com",
+                "url": "https://www.akular.com",
+                "icon": "./media/icons/web.svg"
+            }
+        ]
+    },
+    {
+        "name": "Brno University of Technology\nFaculty of Information Technology",
+        "logo": "./media/icons/vut_fit.png",
+        "date": "2020 – 2023",
+        "description": "Three-year bachelor's degree in the general \"Information Technology\" program.\n\nThroughout my studies, I had the opportunity to delve into a diverse range of subjects spanning multiple programming languages, disciplines and fields. These include:\n- OOP principles and algorithms \n- Software engineering and UI/UX design\n- Numerous programming languages (C, C++, C#, Python, TeX)\n- Artificial intelligence\n- Networking, security and cryptography\n- 3D graphics and game development\n- Operating systems and x86 assembly\n- HW design, microprocessors and embedded systems\n- Mathematics, including algebra, calculus statistics and simulations\n\nI achieved exceptional academic performance, consistently ranking within the top 10% percentile.\nNotably, my bachelor's thesis garnered a perfect grade and received a nomination for the best thesis of the year.\n",
+        "links": [
+            {
+                "name": "fit.vut.cz",
+                "url": "https://www.fit.vut.cz/.en",
+                "icon": "./media/icons/web.svg"
+            }
+        ]
+    },
+    {
+        "name": "Cisco Certified Network Associate\n(CCNA)",
+        "logo": "./media/icons/ccna.png",
+        "date": "2018 – 2020",
+        "description": "A 2 year long certification, widely recognized as a fundamental accreditation in the networking engineering.\nThis certification provided me valuable knowledge in the field including:\n- Switching and routing concepts\n- Principles of building physical network topologies\n- Configuration of enterprise-level hardware\n- Insight into countless networking protocols and IP services\n- Security fundamentals",
+        "links": [
+            {
+                "name": "cisco.com/ccna",
+                "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+                "icon": "./media/icons/web.svg"
+            }
+        ]
+    },
+    {
+        "name": "Secondary School of Electrical Engineering\nAdlerka",
+        "logo": "./media/icons/adlerka.png",
+        "date": "2016 – 2020",
+        "description": "Popular technical high school located in Bratislava, the main city of Slovakia.\nThe focus of my studies was on Information and Network Technology.\nThroughout my time at the school, I actively promoted it through various game projects I developed.\n",
+        "links": [
+            {
+                "name": "adlerka.sk",
+                "url": "https://www.adlerka.sk",
+                "icon": "./media/icons/web.svg"
+            }
+        ]
+    }
+]

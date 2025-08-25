@@ -1,0 +1,55 @@
+﻿name: Deploy Blazor WASM to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+# Avoid overlapping deploys
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+            dotnet-version: 9.0.x   # Adjust if you target a different version
+
+      - name: Restore
+        run: dotnet restore Portfolio.csproj --nologo
+
+      - name: Publish (Release)
+        run: dotnet publish Portfolio.csproj -c Release -o build_output --nologo
+
+      # Use Blazor for deep link navigation
+      - name: Copy index.html to 404.html
+        run: cp build_output/wwwroot/index.html build_output/wwwroot/404.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build_output/wwwroot
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+

@@ -1,0 +1,41 @@
+﻿@page "/skills"
+@using Portfolio.Components
+@using Portfolio.Model
+@using Portfolio.Services
+@inject IDataService DataService
+
+<div class="content">
+    <TextSearch
+        class="search"
+        @ref="_textSearch"
+        Suggestions="DataService.Skills.Select(s => s.Name).ToList()"
+        OnTextChanged="StateHasChanged"
+    />
+    <div class="skill-list">
+        @foreach (var skill in MatchingSkills)
+        {
+            <SkillWidget CurrentSkill="@skill"></SkillWidget>
+        }
+    </div>
+</div>
+
+@code
+{
+    private TextSearch _textSearch;
+
+    private IEnumerable<Skill> MatchingSkills
+    {
+        get
+        {
+            if (_textSearch == null || string.IsNullOrWhiteSpace(_textSearch.Text))
+                return DataService.Skills;
+            var entries = _textSearch.Text.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            return DataService.Skills.Where(skill =>
+                entries.Any(entry =>
+                    skill.Name.Contains(entry, StringComparison.OrdinalIgnoreCase) ||
+                    skill.Keywords.Any(keyword => keyword.Contains(entry, StringComparison.OrdinalIgnoreCase))
+                )
+            );
+        }
+    }
+}

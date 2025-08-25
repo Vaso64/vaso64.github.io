@@ -1,0 +1,114 @@
+﻿[
+    {
+        "id": "unity",
+        "icon": "./media/icons/unity.svg",
+        "name": "Unity",
+        "keywords": ["game", "engine", "xr", "vr", "ar", "3d", "development", "programming"],
+        "description": "Over 10 years of experience on a large number of both personal and professional projects, with a primary focus on technical development and programming, with less emphasis on visual aspects. Extensive knowledge and practice with the majority of the engine's offerings, including its physics system, rendering / lightning, asset authoring, shader programming, input handling, mobile development, performance analysis and optimization, UI, build systems, and many more. Very strong in-depth overview of the Unity API and its scripting ecosystem."
+    },
+    {
+        "id": "csharp",
+        "icon": "./media/icons/csharp.png",
+        "name": "C#",
+        "keywords": ["programming", "language", "csharp", "c#", "dotnet", ".net"],
+        "description": "My primary choice of a programming language. Strong emphasis on writing clean, modular, highly scalable, and easily understandable code. Familiarity with virtually all of the language features, including the most advanced and latest ones. Some examples include LINQ, lambda expressions, extension members, delegates and events, advanced OOP concepts, serialization systems, and asynchronous programming."
+    },
+    {
+        "id": "dotnet",
+        "icon": "./media/icons/dotnet.svg",
+        "name": ".NET",
+        "keywords": [".net", "dotnet", "framework", "c#", "asp.net", "blazor", "razor", "web", "api", "development", "programming", "backend", "frontend", "fullstack", "aspnet", "entity", "framework", "ef"],
+        "description": "Besides my general knowledge of Unity Engine, I'm also familiar with other frameworks and libraries within the .NET ecosystem. I have past experience with ASP.NET, .NET Blazor, and Web API, development of mobile applications with Xamarin, as well as more traditional MVC structured software with WPF. I'm accustomed to using many popular packages such as Entity Framework, AutoMapper, Swagger, and JSON.NET."
+    },
+    {
+        "id": "vr",
+        "icon": "./media/icons/vr.svg",
+        "name": "Virtual Reality (VR)",
+        "keywords": ["vr", "virtual", "reality", "xr", "3d"],
+        "description": "Practice in developing various VR games and software, mainly within the PCVR ecosystem. Experience with utilizing a wide range of VR features and concepts, including room-scale tracking and navigation, hand tracking, gaze-based systems, physically based movement and interaction, motion sickness reduction, and more, with a good understanding of the underlying VR technologies and principles, such as stereoscopic rendering, spatial audio, and user interface design for immersive environments."
+    },
+    {
+        "id": "ar",
+        "icon": "./media/icons/ar.svg",
+        "name": "Augmented Reality (AR)",
+        "keywords": ["ar", "augmented", "reality", "xr", "3d"],
+        "description": "Extensive experience with various AR features, such as plane detection, object recognition, point cloud systems, object-to-model mapping, occlusion, and depth scanning. I previously worked with cutting-edge AR technologies such as Microsoft HoloLens and Magic Leap. Most of the development was done in Unity, utilizing AR Foundation and the corresponding ARCore/ARKit SDKs."
+    },
+    {
+        "id": "git",
+        "icon": "./media/icons/git.png",
+        "name": "Git",
+        "keywords": ["git", "version", "control", "repository", "management", "vcs", "devops"],
+        "description": "Daily use alongside all of my projects with a strong focus on maintaining a clean repository history and other best practices. Expertise in utilizing the more advanced git features like interactive rebasing, cherry-picking, submodules, git hooks, custom merge tools, multi-remote management, and more. Familiarity with various git hosting services such as GitHub, GitLab, and Azure. I'm self-hosting my own GitLab server for personal usage. In team-based projects, I usually take the role of the \"git guru\", helping my colleagues and resolving repository-related issues."
+    },
+    {
+        "id": "c",
+        "icon": "./media/icons/c.png",
+        "name": "C / C++",
+        "keywords": ["c", "c++", "programming", "language", "cpp"],
+        "description": "Regular use in academic projects. I completed multiple C-related university courses. Good overview of the memory management concepts, most of the C language features, and their underlying functionality. Examples of my C-based projects include a CSV editor, RSS client, packet interceptor, 3D CPU renderer, compiler for my own imperative language, and a Petri net factory simulation. Basic-level acquaintance in C++, although the practice is relatively limited, especially with newer standard releases. I have written my own functional 3D game engine in C++."
+    },
+    {
+        "id": "python",
+        "icon": "./media/icons/python.png",
+        "name": "Python",
+        "keywords": ["python", "programming", "language", "scripting", "automation"],
+        "description": "Frequent use in various smaller personal tasks such as calculations, data visualization, web scraping, and automation. Familiarity with numerous Python libraries such as NumPy, Matplotlib, Selenium, TKinter, and BeautifulSoup. I have written a GUI calculator for algebra-level mathematics."
+    },
+    {
+        "id": "linux",
+        "icon": "./media/icons/linux.png",
+        "name": "Linux",
+        "keywords": ["linux", "operating", "system", "administration", "server", "homelab", "devops"],
+        "description": "Expertise in Linux administration. I'm self-hosting my own physical Linux homelab server. Regular use as a development environment, using the WSL. Knowledge of the inner workings of the operating system, including its file system, process management, its scheduling and synchronizations, access rights, memory management, and kernel functionality."
+    },
+    {
+        "id": "web",
+        "icon": "./media/icons/web.svg",
+        "name": "Web Development",
+        "keywords": ["web", "development", "programming", "html", "css", "javascript", "asp.net", "aspnet", "blazor", "razor", "api", "rest", "frontend", "backend", "fullstack", "react", "vue", "angular"],
+        "description": "Medior level expertise in web development. Practice in ASP.NET, especially in .NET Blazor and API development. Good CSS proficiency. Capability of managing various database systems. Limited experience with frameworks within the JavaScript ecosystem."
+    },
+    {
+        "id": "devops",
+        "icon": "./media/icons/devops.png",
+        "name": "DevOps",
+        "keywords": ["devops", "docker", "kubernetes", "ci/cd", "cicd", "automation", "scripting", "infrastructure", "git", "version", "control", "management", "github", "gitlab", "azure"],
+        "description": "Proficiency in the DevOps discipline, with a focus on automation, deployment, and infrastructure management. I'm capable of deploying services in both native and virtualized environments, such as Docker. Familiarity with CI/CD practices and tools, like writing CI scripts for various platforms and creating broad test suites in some frameworks. Strong skills in managing VCS repositories and general Git knowledge."
+    },
+    {
+        "id": "docker",
+        "icon": "./media/icons/docker.svg",
+        "name": "Docker",
+        "keywords": ["docker", "containerization", "virtualization", "devops", "containers", "images", "compose", "deployment", "orchestration"],
+        "description": "Strong expertise with Docker system and its features. These include advanced network and volume management, deployment of complex images, Docker CLI, use of Docker Compose, writing sophisticated Dockerfiles, and management of hosted images. In the past, I have utilized Docker to deploy and maintain the company's custom software. I run my own homelab server, offering a wide variety of services for friends and family, most of which are running under Docker."
+    },
+    {
+        "id": "android",
+        "icon": "./media/icons/android.png",
+        "name": "Android",
+        "keywords": ["android", "mobile", "development", "programming", "java", "kotlin"],
+        "description": "Advanced power user, frequently engaging in various system modifications and customizations within the ecosystem. Decent understanding of the underlying operating system. Familiarity with the Android SDK tools. I have developed several mobile games and 3D apps in the past, utilizing various hardware features."
+    },
+    {
+        "id": "adobe",
+        "icon": "./media/icons/adobe.svg",
+        "name": "Adobe Suite",
+        "keywords": ["adobe", "photoshop", "illustrator", "premier", "after effect", "xd", "lightroom", "indesign", "design", "graphics", "editing"],
+        "description": "Good practice in utilizing many of Adobe's graphical editors, especially Photoshop and its more advanced features. Entry-level skill in Premier, After Effects, Experience Design (XD), Lightroom, and InDesign."
+    },
+    {
+        "id": "networking",
+        "icon": "./media/icons/ethernet.svg",
+        "name": "Networking",
+        "keywords": ["networking", "network", "switching", "routing", "tcp/ip", "osi", "protocols", "security", "encryption"],
+        "description": "Broad overview of the majority of networking concepts, such as switching, routing, TCP/IP stack, OSI model, various network protocols, SSL and other encryption methods, security practices, network topologies, usage of popular network programs and many more. I have a decent practice in building, configuring and maintaining virtual and physical networks in both homelab and enterprise environments. I also completed a 2-year-long Cisco CCNA certification and numerous network-related university courses."
+    },
+    {
+        "id": "blender",
+        "icon": "./media/icons/blender.svg",
+        "name": "Blender",
+        "keywords": ["blender", "3d", "modeling", "sculpting", "animation", "shaders", "texturing", "uv mapping"],
+        "description": "Mid-level proficiency with most of Blender's tools, including polygonal modeling, sculpting, animations, shaders, texturing, and UV mapping."
+    }
+]

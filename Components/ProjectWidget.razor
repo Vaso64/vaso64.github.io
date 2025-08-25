@@ -1,0 +1,37 @@
+﻿<div class="root-container">
+    <div class="root">
+        <div class="header">
+            <h2 class="header-name">@($"{CurrentProject.Name} ({CurrentProject.Year})")</h2>
+            <h3 class="header-subname">@CurrentProject.SubName</h3>
+            <div class="header-tags">
+                @foreach(var skill in CurrentProject.Skills)
+                {
+                    <Tag class="header-tags-item" Text="@skill.Name" Url="@($"/skills#{skill.Id}")"/>
+                }
+            </div>
+        </div>
+
+        <svg class="divider" viewBox="0 0 1 1" preserveAspectRatio="none">
+            <rect width="1" height="1"/>
+        </svg>
+
+        <MediaShowcase class="project-media" Media="CurrentProject.Media" />
+
+        <div class="info">
+            <p class="info-description">@CurrentProject.Description</p>
+            <div class="info-links">
+                @foreach (var link in CurrentProject.Links)
+                {
+                    <IconButton class="info-links-item" Name="@link.Name" Url="@link.Url" Icon="@link.Icon" />
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code
+{
+    [Parameter]
+    public Model.Project CurrentProject { get; set; }
+}

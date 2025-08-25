@@ -1,0 +1,90 @@
+﻿.root {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(600px + 20vw);
+    width: 100%;
+    gap: calc(10px + 0.4vw);
+}
+
+.header {
+    display: grid;
+    align-items: flex-end;
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+}
+
+@media screen and (min-width: 721px) {
+    .header {
+        grid-template-areas: "icon title date";
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .header-date {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 481px) {
+    .header {
+        grid-template-areas: "icon  blank"
+                             "title date";
+    }
+
+    .header-date {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        grid-template-areas: "icon"
+                             "title"
+                             "date";
+    }
+
+    .header-title {
+        display: none;
+        margin-top: -20px;
+    }
+}
+
+
+.header-icon {
+    grid-area: icon;
+    max-height: calc((160px + 2vw) / 2);
+    max-width: calc(160px + 2vw);
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-title {
+    grid-area: title;
+    justify-self: stretch;
+    white-space: pre-wrap;
+}
+
+.header-date {
+    grid-area: date;
+}
+
+.divider{
+    width: 100%;
+    height: var(--line);
+    fill: black;
+}
+
+.links{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: calc(12px + 0.6vw);
+    row-gap: calc(8px + 0.4vw);
+
+}
+
+.links-item{
+    width: calc(200px + 2vw);
+}

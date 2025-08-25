@@ -1,0 +1,14 @@
+﻿<div id="@CurrentSkill.Id" class="root">
+    <div class="header">
+        <h2 class="name">@CurrentSkill.Name</h2>
+        <img class="icon" src="@CurrentSkill.Icon" alt="@(CurrentSkill.Name) Icon"/>
+    </div>
+    <svg class="divider" viewBox="0 0 1 1" preserveAspectRatio="none"><rect width="1" height="1"/></svg>
+    <p class="description">@CurrentSkill.Description</p>
+</div>
+
+@code
+{
+    [Parameter]
+    public Model.Skill CurrentSkill { get; set; }
+}

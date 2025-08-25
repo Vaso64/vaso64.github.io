@@ -1,0 +1,638 @@
+﻿[
+    {
+        "name": "Perception VR",
+        "subName": "Puzzles, Portal and Non-euclidean geometry",
+        "year": 2023,
+        "description": "A highly experimental virtual reality game and my bachelor's thesis, which utilizes advanced rendering techniques to create various optical illusions and impossible geometry effects. The primary mechanic of the game are so-called \"portals\", a set of surfaces connecting two distant spaces together, both visually and physically. The player's goal is to progress through the convoluted maze by solving various challenging puzzles, often requiring unconventional and creative outside-of-the-box thinking. The game features complex systems such as space reorientation, scale manipulation, and time dilation.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://www.github.com/Vaso64/PerceptionVR",
+                "icon": "./media/icons/github.svg"
+            },
+            {
+                "name": "Itch.io",
+                "url": "https://vaso64.itch.io/perceptionvr",
+                "icon": "./media/icons/itchio.svg"
+            }
+        ],
+        "skillIds": [
+            "vr",
+            "unity",
+            "c_sharp",
+            "git"
+        ],
+        "media": [
+            {
+                "type": "video",
+                "src": "./media/projects/perceptionvr/1.mp4",
+                "thumbnail": "./media/projects/perceptionvr/1_thumb.jpg"
+            },
+            {
+                "type": "video",
+                "src": "./media/projects/perceptionvr/2.mp4",
+                "thumbnail": "./media/projects/perceptionvr/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/perceptionvr/3.jpg",
+                "thumbnail": "./media/projects/perceptionvr/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/perceptionvr/4.jpg",
+                "thumbnail": "./media/projects/perceptionvr/4_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/perceptionvr/5.jpg",
+                "thumbnail": "./media/projects/perceptionvr/5_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "Hectic Galactic",
+        "subName": "Asymmetrical multiplayer spaceship management",
+        "year": 2024,
+        "description": "University school project, made in collaboration with two other students, is an alternative sci-fi take on the popular bomb defusal game \"Keep Talking and Nobody Explodes\". Two players take the role of an \"operator\" who is in charge of flying a spaceship and a \"support\" role with access to the spaceship's manual. Players must cooperate during the flight in order to tackle various semi-randomized challenges and obstacles with increasing complexity.",
+        "links": [
+            {
+                "name": "Itch.io",
+                "url": "https://vaso64.itch.io/hectic-galactic",
+                "icon": "./media/icons/itchio.svg"
+            }
+        ],
+        "skillIds": [
+            "unity",
+            "c_sharp",
+            "git"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/hecticgalactic/2.jpg",
+                "thumbnail": "./media/projects/hecticgalactic/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/hecticgalactic/3.jpg",
+                "thumbnail": "./media/projects/hecticgalactic/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/hecticgalactic/4.jpg",
+                "thumbnail": "./media/projects/hecticgalactic/4_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/hecticgalactic/5.jpg",
+                "thumbnail": "./media/projects/hecticgalactic/5_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "ZeroG VR",
+        "subName": "Tactical stealth shooter with a weightless twist",
+        "year": 2022,
+        "description": "Winner of a 3-day university game-jam contest, featuring a unique virtual reality locomotion system. Player can move physically in a zero-gravity environment using their own hands, by pulling and pushing off nearby obstacles while also managing a limited energy, consumed by their utilities and replenished with various items scattered around the levels, forcing players to think strategically about their next move. A player's goal is to stealthily reach the end of the level while avoiding patrolling AI along the way.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/Vaso64/ZeroG_VR",
+                "icon": "./media/icons/github.svg"
+            },
+            {
+                "name": "Itch.io",
+                "url": "https://vaso64.itch.io/zerogvr",
+                "icon": "./media/icons/itchio.svg"
+            }
+        ],
+        "skillIds": [
+            "vr",
+            "unity",
+            "c_sharp",
+            "git"
+        ],
+        "media": [
+            {
+                "type": "video",
+                "src": "./media/projects/zerog/1.mp4",
+                "thumbnail": "./media/projects/zerog/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/zerog/2.jpg",
+                "thumbnail": "./media/projects/zerog/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/zerog/3.jpg",
+                "thumbnail": "./media/projects/zerog/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/zerog/4.jpg",
+                "thumbnail": "./media/projects/zerog/4_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/zerog/5.jpg",
+                "thumbnail": "./media/projects/zerog/5_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "Portfolio",
+        "subName": "You are currently looking at it!",
+        "year": 2025,
+        "description": "My simple personal portfolio website, made with the purpose of showcasing my skills, experience, and projects. The website is built using .NET Razor and some basic CSS. It features a simple responsive design and is built with modularity in mind, allowing for easy updates and additions in the future.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/Vaso64/vaso64.github.io",
+                "icon": "./media/icons/github.svg"
+            },
+            {
+                "name": "Web",
+                "url": "https://vaso64.dev",
+                "icon": "./media/icons/web.svg"
+            }
+        ],
+        "skillIds": [
+            "dotnet",
+            "web",
+            "c_sharp"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/portfolio/1.jpg",
+                "thumbnail": "./media/projects/portfolio/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/portfolio/2.jpg",
+                "thumbnail": "./media/projects/portfolio/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/portfolio/3.jpg",
+                "thumbnail": "./media/projects/portfolio/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/portfolio/4.jpg",
+                "thumbnail": "./media/projects/portfolio/4_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/portfolio/5.jpg",
+                "thumbnail": "./media/projects/portfolio/5_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "Horror Maze",
+        "subName": "Procedurally generated maze survival",
+        "year": 2020,
+        "description": "Mobile game with the horror genre, where a player has to navigate through a procedurally generated maze while avoiding enemies, roaming in the darkness. The enemy represents an AI capable of complex behavior, such as naturally reacting to the player's actions, slowly learning and remembering the maze's layout, and systematically searching for a hidden player. Player, on the other hand, can utilize various tools scattered in the maze to their advantage by trapping, stunning, distracting, and confusing the monster. The game provides a highly customizable experience, allowing players to adjust various parameters for the maze generation process, monsters' behavior, and difficulty.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://www.github.com/Vaso64/HorrorMaze",
+                "icon": "./media/icons/github.svg"
+            }
+        ],
+        "skillIds": [
+            "unity",
+            "c_sharp",
+            "android",
+            "git"
+        ],
+        "media": [
+            {
+                "type": "video",
+                "src": "./media/projects/horrormaze/1.mp4",
+                "thumbnail": "./media/projects/horrormaze/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/horrormaze/2.jpg",
+                "thumbnail": "./media/projects/horrormaze/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/horrormaze/3.jpg",
+                "thumbnail": "./media/projects/horrormaze/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/horrormaze/4.jpg",
+                "thumbnail": "./media/projects/horrormaze/4_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/horrormaze/5.jpg",
+                "thumbnail": "./media/projects/horrormaze/5_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "Crossy Clone",
+        "subName": "1:1 replica of a popular mobile game",
+        "year": 2019,
+        "description": "The result of a one-month challenge, where I set out to recreate a popular mobile game Crossy Road. Initially inspired by the old-school arcade game Frogger, the game involves a jumping chicken, controlled by the player, trying to cross a busy road while avoiding various obstacles and hazards along the way. Cartoonish models and environments were created using MagicaVoxel. Designed with mobile devices in mind, but also playable on PC with a keyboard and mouse.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://www.github.com/Vaso64/CrossyClone",
+                "icon": "./media/icons/github.svg"
+            },
+            {
+                "name": "Itch.io",
+                "url": "https://vaso64.itch.io/crossyclone",
+                "icon": "./media/icons/itchio.svg"
+            }
+        ],
+        "skillIds": [
+            "unity",
+            "c_sharp",
+            "android"
+        ],
+        "media": [
+            {
+                "type": "video",
+                "src": "./media/projects/crossyclone/1.mp4",
+                "thumbnail": "./media/projects/crossyclone/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/crossyclone/2.jpg",
+                "thumbnail": "./media/projects/crossyclone/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/crossyclone/3.jpg",
+                "thumbnail": "./media/projects/crossyclone/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/crossyclone/4.jpg",
+                "thumbnail": "./media/projects/crossyclone/4_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/crossyclone/5.jpg",
+                "thumbnail": "./media/projects/crossyclone/5_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "3D E-learning web solution",
+        "subName": "",
+        "year": 2025,
+        "description": "A complex web-based 3D e-learning platform in active development, which I made while being employed at Mynd. The platform features a wide range of interactive 3D models and engine-like tools in an enterprise-level environment. I had the majority of the responsibility for the platform's development, including architectural design, implementation, CI, deployment, testing, and maintenance. The highlights in the development stack include Unity, ASP.NET backend, React.js UI, and Docker.",
+        "links": [],
+        "skillIds": [
+            "unity",
+            "c_sharp",
+            "dotnet",
+            "docker",
+            "devops",
+            "git"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/common/nda.jpg",
+                "thumbnail": "./media/projects/common/nda_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "3D Architecture visualization web app",
+        "subName": "",
+        "year": 2025,
+        "description": "Interactive 3D web application with strong emphasis on high-fidelity lightning and photorealism, professionally made as an employee at Mynd. The application is optimized for high performance, leverages large-sized data-streaming for assets while also being runnable in a browser environment. With the exception of 3D assets creation, the entire project was solo-developed by me.",
+        "links": [],
+        "skillIds": [
+            "unity",
+            "c_sharp",
+            "git"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/common/nda.jpg",
+                "thumbnail": "./media/projects/common/nda_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "Path Tracer",
+        "year": 2025,
+        "description": "Renderer capable of producing path-traced lighting in real-time, written in C++ and OpenGL API (GLSL). The renderer offers various ray-sampling techniques with varying complexity (uniform, cosine, mixed) and BRDF models (Lambert, GGX (without translucency), mixed).",
+        "links": [],
+        "skillIds": [
+            "c"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/1.jpg",
+                "thumbnail": "./media/projects/pathtracer/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/2.jpg",
+                "thumbnail": "./media/projects/pathtracer/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/3.jpg",
+                "thumbnail": "./media/projects/pathtracer/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/4.jpg",
+                "thumbnail": "./media/projects/pathtracer/4_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/pathtracer/5.jpg",
+                "thumbnail": "./media/projects/pathtracer/5_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "3D Game Engine",
+        "year": 2024,
+        "description": "My own custom game engine, built with C++ and OpenGL. It features fully functional physics (including collision resolving, gravity, depenetration, friction, restitution, etc.), rendering (including lightning, material system, mesh management / generation, custom shader support), mathematical utilities (Vector, Quaternion, Matrix, Plane, etc.) and fully scriptable system with component-based architecture and API similar to Unity. A simple 3D pong game was made with it as a proof of concept, showcasing the engine's capabilities.",
+        "links": [],
+        "skillIds": [
+            "c",
+            "git"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/engine/1.jpg",
+                "thumbnail": "./media/projects/engine/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/engine/2.jpg",
+                "thumbnail": "./media/projects/engine/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/engine/3.jpg",
+                "thumbnail": "./media/projects/engine/3_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "Humanoid 3D Model",
+        "year": 2025,
+        "description": "My second, more complex, realistic 3D model of a humanoid character, created with Blender and Adobe Substance Painter in a 3D Modelling university course. The model features a fully rigged skeleton system, physically simulated clothing, and high visual details such as realistic skin and hair. The process involved reference blockout, high-poly sculpting, retopology, UV mapping, multi-layer PBR painting, rigging, weight painting, posing, and many more.",
+        "links": [],
+        "skillIds": [
+            "blender",
+            "substance_painter",
+            "3d_modeling"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/modelhuman/1.jpg",
+                "thumbnail": "./media/projects/modelhuman/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/modelhuman/2.jpg",
+                "thumbnail": "./media/projects/modelhuman/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/modelhuman/3.jpg",
+                "thumbnail": "./media/projects/modelhuman/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/modelhuman/4.jpg",
+                "thumbnail": "./media/projects/modelhuman/4_thumb.jpg"
+            },
+            {
+                "type": "video",
+                "src": "./media/projects/modelhuman/5.mp4",
+                "thumbnail": "./media/projects/modelhuman/4_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "Mechanical 3D Model",
+        "year": 2025,
+        "description": "My first 3D model of a robotic character, made in Blender during the 3D Modelling university course. The primary purpose was to teach myself the basics of Blender and 3D modeling. The model was later used in my own simple animation clip (check out the attached media).",
+        "links": [],
+        "skillIds": [
+            "blender",
+            "3d_modeling",
+            "animation"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/modelrobot/1.jpg",
+                "thumbnail": "./media/projects/modelrobot/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/modelrobot/2.jpg",
+                "thumbnail": "./media/projects/modelrobot/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/modelrobot/3.jpg",
+                "thumbnail": "./media/projects/modelrobot/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/modelrobot/4.jpg",
+                "thumbnail": "./media/projects/modelrobot/4_thumb.jpg"
+            },
+            {
+                "type": "video",
+                "src": "./media/projects/modelrobot/5.mp4",
+                "thumbnail": "./media/projects/modelrobot/5_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "RideShare",
+        "subName": ".NET Desktop application for carpooling",
+        "year": 2020,
+        "description": "A simple desktop application for carpooling, made as a university project with three other students. The app was built on the .NET platform with a minimal stack, utilizing only the WPF and Entity Framework. The main goal for developing the app was to teach ourselves the practices of software engineering and collaboration, with strong emphasis on the design patterns, code architecture quality, high modularity, and feature scalability.",
+        "links": [],
+        "skillIds": [
+            "dotnet",
+            "c_sharp",
+            "git"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/rideshare/1.jpg",
+                "thumbnail": "./media/projects/rideshare/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/rideshare/2.jpg",
+                "thumbnail": "./media/projects/rideshare/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/rideshare/3.jpg",
+                "thumbnail": "./media/projects/rideshare/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/rideshare/4.jpg",
+                "thumbnail": "./media/projects/rideshare/4_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "To The Stars",
+        "subName": "Competitive couch co-op tower builder / platformer",
+        "year": 2023,
+        "description": "Entry for 24-hour game jam. Players compete against each other in building, scaling up, and climbing their towers as fast as possible, while trying to sabotage their opponents' progress. The game features colorful hand-made visuals, simple crafting and farming mechanics, and arcade physics-based movement. Playable up to 8 players in 2 teams.",
+        "links": [],
+        "skillIds": [
+            "unity",
+            "c_sharp",
+            "git"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/tothestars/1.jpg",
+                "thumbnail": "./media/projects/tothestars/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/tothestars/2.jpg",
+                "thumbnail": "./media/projects/tothestars/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/tothestars/3.jpg",
+                "thumbnail": "./media/projects/tothestars/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/tothestars/4.jpg",
+                "thumbnail": "./media/projects/tothestars/4_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "RSS Reader",
+        "year": 2020,
+        "description": "One of the many university projects I made during my studies. A console-based RSS feed application, written in pure C language. The main focus of the project was to teach myself the basics of low-level network systems, such as socket programming, TCP/IP protocols, HTTP requests, and handling of SSL encryption without any external libraries. The application is capable of fetching and parsing RSS feeds from various sources, displaying the results in a user-friendly manner.",
+        "links": [],
+        "skillIds": [
+            "c",
+            "networking"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/common/console.jpg",
+                "thumbnail": "./media/projects/common/console_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "Packet Interceptor",
+        "year": 2019,
+        "description": "Another low-level CLI application similar to my RSS Reader, written in C, made for educational purposes. The program is capable of intercepting, filtering, and parsing raw UDP/TCP network data in real-time, with a wide range of supported protocols, and is useful for analyzing network traffic.",
+        "links": [],
+        "skillIds": [
+            "c",
+            "networking"
+        ],
+        "media": [
+            {
+                "type": "image",
+                "src": "./media/projects/common/console.jpg",
+                "thumbnail": "./media/projects/common/console_thumb.jpg"
+            }
+        ]
+    },
+
+    {
+        "name": "Roller Baller",
+        "subName": "Simple endless runner and my first game",
+        "year": 2017,
+        "description": "My first video game, made for the purpose of teaching myself the basics of the Unity Engine. The game revolves around a rolling ball, which the player controls using the gyroscopic sensor of a mobile device. The player can move horizontally by tilting the device, avoiding obstacles, and collecting coins. With constantly increasing speed and complexity of the level, the goal is to get as far as possible.",
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://www.github.com/Vaso64/RollerBaller",
+                "icon": "./media/icons/github.svg"
+            },
+            {
+                "name": "Itch.io",
+                "url": "https://vaso64.itch.io/rollerballer",
+                "icon": "./media/icons/itchio.svg"
+            }
+        ],
+        "skillIds": [
+            "unity",
+            "c_sharp",
+            "android"
+        ],
+        "media": [
+            {
+                "type": "video",
+                "src": "./media/projects/rollerballer/1.mp4",
+                "thumbnail": "./media/projects/rollerballer/1_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/rollerballer/2.jpg",
+                "thumbnail": "./media/projects/rollerballer/2_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/rollerballer/3.jpg",
+                "thumbnail": "./media/projects/rollerballer/3_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/rollerballer/4.jpg",
+                "thumbnail": "./media/projects/rollerballer/4_thumb.jpg"
+            },
+            {
+                "type": "image",
+                "src": "./media/projects/rollerballer/5.jpg",
+                "thumbnail": "./media/projects/rollerballer/5_thumb.jpg"
+            }
+        ]
+    }
+]

@@ -1,0 +1,27 @@
+﻿<div class="root @Class">
+    <div class="header">
+        <img class="header-icon" src="@CurrentExperience.Logo" alt="Experience Icon"/>
+        <h2 class="header-title">@CurrentExperience.Name</h2>
+        <h2 class="header-date">@CurrentExperience.Date</h2>
+    </div>
+    <svg class="divider" viewBox="0 0 1 1" preserveAspectRatio="none">
+        <rect width="1" height="1"/>
+    </svg>
+    <p class="description">@CurrentExperience.Description</p>
+    <div class="links">
+        @foreach (var link in CurrentExperience.Links)
+        {
+            <IconButton Name="@link.Name" Icon="@link.Icon" Url="@link.Url"/>
+        }
+    </div>
+</div>
+
+
+@code
+{
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    [Parameter]
+    public Model.Experience CurrentExperience { get; set; }
+}

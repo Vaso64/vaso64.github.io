@@ -1,0 +1,10 @@
+﻿@page "/experience"
+@using Portfolio.Components
+@using Portfolio.Services
+@inject IDataService DataService
+
+<div class="content">
+    @foreach (var experience in DataService.Experiences) {
+        <ExperienceWidget CurrentExperience="@experience"></ExperienceWidget>
+    }
+</div>

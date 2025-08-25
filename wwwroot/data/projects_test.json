@@ -1,0 +1,94 @@
+﻿[
+    {
+        "name": "Project Alpha",
+        "subName": "Alpha",
+        "description": "This is the first project.",
+        "technologies": [
+            "ASP.NET Core, Blazor"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "icon": "/media/icons/github.svg",
+                "url": "https://github.com"
+            },
+            {
+                "name": "Live Demo",
+                "icon": "/media/icons/web.svg",
+                "url": "https://example.com/demo"
+            }
+        ],
+        "media": [
+            {
+                "type": "image",
+                "thumbnail": "/media/projects/project-alpha.png",
+                "src": "/media/projects/project-alpha.png"
+            },
+            {
+                "type": "video",
+                "thumbnail": "/media/projects/project-alpha-thumbnail.png",
+                "src": "/media/projects/project-alpha.mp4"
+            }
+        ]
+    },
+    {
+        "name": "Project Beta",
+        "subName": "Beta",
+        "description": "This is the second project.",
+        "technologies": [
+            "Blazor"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "icon": "/media/icons/github.svg",
+                "url": "https://github.com"
+            },
+            {
+                "name": "Live Demo",
+                "icon": "/media/icons/web.svg",
+                "url": "https://example.com/demo"
+            }
+        ]
+    },
+    {
+        "name": "Project Gamma",
+        "subName": "Gamma",
+        "description": "This is the third project.",
+        "technologies": [
+            "ASP.NET Core, Blazor"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "icon": "/media/icons/github.svg",
+                "url": "https://github.com"
+            },
+            {
+                "name": "Live Demo",
+                "icon": "/media/icons/web.svg",
+                "url": "https://example.com/demo"
+            }
+        ]
+    },
+    {
+        "name": "Project Delta",
+        "subName": "Delta",
+        "description": "This is the fourth project.",
+        "technologies": [
+            "Blazor"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "icon": "/media/icons/github.svg",
+                "url": "https://github.com"
+            },
+            {
+                "name": "Live Demo",
+                "icon": "/media/icons/web.svg",
+                "url": "https://example.com/demo"
+            }
+        ]
+    }
+]
